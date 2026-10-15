@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shugaring_Beauty_Bishkek — шугаринг, воск, лазерная эпиляция в Бишкеке</title>
+<meta name="description" content="Shugaring Beauty Bishkek: шугаринг, ваксинг, лазерная эпиляция, отбеливание, SPA. 4 филиала, 10 лет опыта, 10 000+ клиентов. Онлайн-запись.">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#top"><img src="assets/logo.jpg" alt="Logo"><span>Shugaring_Beauty_Bishkek</span></a>
+  <button class="burger" id="burger" aria-label="Меню">☰</button>
+  <nav id="menu">
+    <a href="#services">Услуги</a><a href="#prices">Цены</a><a href="#book">Запись</a><a href="#branches">Филиалы</a>
+    <a class="btn small" href="#book">Записаться через WhatsApp</a>
+    <a class="btn small ghost" href="https://n572863.alteg.io/" target="_blank" rel="noopener">Записаться онлайн</a>
+  </nav>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-in">
+    <img class="hero-logo" src="assets/logo.jpg" alt="Shugaring Beauty">
+    <div>
+      <h1>Shugaring <em>Beauty</em> Bishkek</h1>
+      <p>Гладкая кожа без боли и раздражения. Шугаринг, воск, лазер и уход за зоной бикини в 4 филиалах Бишкека.</p>
+      <div class="cta"><a class="btn" href="#book">Записаться через WhatsApp</a><a class="btn ghost" href="https://n572863.alteg.io/" target="_blank" rel="noopener">Записаться онлайн</a><a class="btn ghost" href="#prices">Смотреть цены</a></div>
+    </div>
+  </div>
+  <div class="stats">
+    <div><b>с 2015</b><span>работаем</span></div>
+    <div><b>10 лет</b><span>опыта</span></div>
+    <div><b data-n="10000">0</b><span>довольных клиентов</span></div>
+    <div><b>4</b><span>филиала</span></div>
+  </div>
+</section>
+
+<section id="services">
+  <h2>Наши услуги</h2>
+  <div class="cards">
+    <article class="card"><i>🍯</i><h3>Шугаринг</h3><p>Нежное удаление волос сахарной пастой. Подходит для чувствительной кожи.</p><a href="#prices" data-tab="sugar">Цены →</a></article>
+    <article class="card"><i>🌸</i><h3>Ваксинг</h3><p>Восковая депиляция лица и тела. Быстро и аккуратно.</p><a href="#prices" data-tab="wax">Цены →</a></article>
+    <article class="card"><i>✨</i><h3>Лазерная эпиляция</h3><p>Долгосрочный результат. Безопасно и комфортно.</p><a href="#prices" data-tab="laser">Цены →</a></article>
+    <article class="card"><i>💎</i><h3>Отбеливание зоны бикини и подмышек</h3><p>Выравнивает тон кожи и убирает пигментацию.</p><a href="#book" data-service="Отбеливание зоны бикини и подмышек">Цена по запросу →</a></article>
+    <article class="card"><i>🧖‍♀️</i><h3>SPA процедура для бикини</h3><p>Уход, увлажнение и восстановление кожи после депиляции.</p><a href="#book" data-service="SPA процедура для бикини">Цена по запросу →</a></article>
+  </div>
+</section>
+
+<section id="prices" class="alt">
+  <h2>Цены</h2>
+  <div class="tabs" id="tabs"></div>
+  <div id="price-out"></div>
+  <p class="note">Цены указаны в сомах. Точную стоимость отбеливания и SPA уточняйте в WhatsApp.</p>
+</section>
+
+<section id="why">
+  <h2>Почему выбирают нас</h2>
+  <div class="cards three">
+    <div class="card"><i>🏆</i><h3>10 лет опыта</h3><p>Работаем с 2015 года и знаем, как сделать процедуру комфортной.</p></div>
+    <div class="card"><i>🧤</i><h3>Стерильность</h3><p>Одноразовые перчатки и шпатели, чистые рабочие места.</p></div>
+    <div class="card"><i>💗</i><h3>10 000+ клиентов</h3><p>Нас рекомендуют подругам и возвращаются снова.</p></div>
+  </div>
+</section>
+
+<section id="book" class="alt">
+  <h2>Онлайн-запись</h2>
+  <p class="sub">Заполните форму — откроется WhatsApp с готовым сообщением.</p>
+  <form id="form" novalidate>
+    <label>Ваше имя<input id="name" required placeholder="Например, Айдана"></label>
+    <label>Телефон<input id="phone" type="tel" required placeholder="+996 ___ ___ ___"></label>
+    <label>Услуга<select id="service"></select></label>
+    <label>Филиал<select id="branch"></select></label>
+    <label>Дата<input id="date" type="date" required></label>
+    <label>Время<input id="time" type="time" required></label>
+    <label class="full">Комментарий<textarea id="comment" rows="3" placeholder="Необязательно"></textarea></label>
+    <button class="btn full" type="submit">Записаться через WhatsApp</button>
+    <p id="err" class="err"></p>
+  </form>
+</section>
+
+<section id="branches">
+  <h2>Наши филиалы</h2>
+  <div class="cards four" id="branch-list"></div>
+</section>
+
+<footer>
+  <b>Shugaring_Beauty_Bishkek</b>
+  <p>Шугаринг • Ваксинг • Лазерная эпиляция • Бишкек</p>
+  <a href="https://wa.me/996557520120" target="_blank" rel="noopener">WhatsApp: +996 557 520 120</a>
+  <small>© <span id="y"></span> Shugaring Beauty Bishkek</small>
+</footer>
+<a class="wa" href="https://wa.me/996557520120" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+<script src="script.js"></script>
+</body>
+</html>
